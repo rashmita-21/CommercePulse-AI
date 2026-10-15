@@ -1,0 +1,10 @@
+Metric,Value
+Original rows,1067371
+Exact duplicate rows removed,34335
+Rows after deduplication,1033036
+Sales lines retained,1007913
+Return/cancellation-related rows,22497
+Sales rows with identified customers,779425
+Unique products in sales,4916
+Unique invoices in sales,40077
+Identified customers in sales,5878

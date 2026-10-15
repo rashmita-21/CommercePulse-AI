@@ -1,0 +1,21 @@
+﻿.venv/
+__pycache__/
+*.py[cod]
+.env
+.vscode/
+data/raw/
+data/processed/
+models/*.joblib
+
+
+# Generated analysis reports
+reports/business_kpis.csv
+reports/country_performance.csv
+reports/country_sales.csv
+reports/customer_behaviour.csv
+reports/customer_summary.csv
+reports/monthly_sales.csv
+reports/monthly_trends.csv
+reports/product_sales.csv
+reports/top_products.csv
+reports/repeat_purchase_predictions.csv

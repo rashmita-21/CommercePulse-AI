@@ -1,0 +1,13 @@
+Metric,Value
+Training Snapshot Rows,15595
+Test Customers,5041
+Test Repeat-Purchase Rate,0.34993056933148187
+Accuracy,0.7631422336837929
+Precision,0.6527331189710611
+Recall,0.6904761904761905
+F1 Score,0.6710743801652893
+ROC AUC,0.8201991202339953
+Average Precision,0.7408474895764723
+Selected Model,Random Forest
+Test Cutoff,2011-07-01
+Test Target End,2011-10-01
