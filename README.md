@@ -172,7 +172,7 @@ The existing dashboard is maintained separately from the Python modelling pipeli
 **Rashmita Perumanla**
 
 GitHub: [rashmita-21](https://github.com/rashmita-21)
-
+Linkedin: [rashmita perumanla](https://www.linkedin.com/in/rashmita-perumanla/)
 ---
 
 *CommercePulse AI demonstrates an integrated approach to retail analytics, customer behaviour analysis, and predictive modelling using historical transaction data.*
