@@ -166,14 +166,6 @@ The project also includes a Power BI dashboard developed for retail performance 
 
 The existing dashboard is maintained separately from the Python modelling pipeline.
 
-## Limitations and Future Improvements
-
-- Validate performance across additional temporal holdout periods.
-- Assess probability calibration and choose decision thresholds based on business costs.
-- Evaluate whether retention campaigns create incremental purchases through controlled experiments.
-- Improve interpretability and document the operational use of customer-level predictions.
-- Add dashboard screenshots and a reproducible environment specification.
-- Explore customer segmentation and campaign-level return-on-investment analysis.
 
 ## Author
 
