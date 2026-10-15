@@ -39,9 +39,9 @@ The project connects historical retail transactions with actionable business ins
 
 The predictive component estimates whether a customer will make a repeat purchase during the three months following an observation date.
 
-### Modelling approach
+### Modelling Approach
 
-- **Observation dates:** July 2010, October 2010, January 2011, and April 2011 for training snapshots.
+- **Training observation dates:** July 2010, October 2010, January 2011, and April 2011.
 - **Temporal test snapshot:** July 1, 2011.
 - **Prediction horizon:** The following three months.
 - **Training snapshots:** 15,595 customer-snapshot records.
@@ -50,7 +50,7 @@ The predictive component estimates whether a customer will make a repeat purchas
 
 Customer features include historical purchase recency, transaction frequency, purchase quantity, sales value, and product diversity.
 
-### Model comparison
+### Model Comparison
 
 | Metric | Random Forest | Logistic Regression |
 |---|---:|---:|
@@ -63,7 +63,7 @@ Customer features include historical purchase recency, transaction frequency, pu
 
 **Selected model: Random Forest**, based on its higher ROC AUC in this evaluation.
 
-Random Forest performed slightly better overall on the reported ROC AUC, F1 score, and average precision metrics. Logistic Regression achieved slightly higher recall, which may be relevant when the business objective is to identify as many potential repeat purchasers as possible.
+Random Forest performed slightly better on ROC AUC, F1 score, and average precision. Logistic Regression achieved slightly higher recall, which may be relevant when the business objective is to identify as many potential repeat purchasers as possible.
 
 These results represent a historical backtest on the available dataset. They do not guarantee performance on present-day customers or establish the financial impact of a retention campaign.
 
@@ -85,9 +85,9 @@ Predictions should be validated and paired with campaign experiments before bein
 ```text
 CommercePulse-AI/
 ├── data/
-│   ├── raw/                 # Source dataset (not committed)
-│   └── processed/           # Prepared data (not committed)
-├── models/                  # Saved model artefacts (not committed)
+│   ├── raw/                 # Original dataset (excluded from Git)
+│   └── processed/           # Prepared datasets (excluded from Git)
+├── models/                  # Trained model artifacts (excluded from Git)
 ├── reports/
 │   ├── ml_classification_report.txt
 │   ├── ml_feature_importance.csv
@@ -106,14 +106,14 @@ CommercePulse-AI/
 
 ## Getting Started
 
-### 1. Clone the repository
+### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/rashmita-21/CommercePulse-AI.git
 cd CommercePulse-AI
 ```
 
-### 2. Create and activate a virtual environment
+### 2. Create and Activate a Virtual Environment
 
 On Windows PowerShell:
 
@@ -122,13 +122,13 @@ python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 ```
 
-### 3. Install the required libraries
+### 3. Install Dependencies
 
 ```bash
 python -m pip install pandas numpy scikit-learn openpyxl joblib
 ```
 
-### 4. Obtain the dataset
+### 4. Obtain the Dataset
 
 Download the **Online Retail II** dataset from the [UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/502/online+retail+ii).
 
@@ -140,9 +140,9 @@ data/raw/online_retail_II.xlsx
 
 The raw dataset and processed transaction files are excluded from this repository.
 
-### 5. Run the pipeline
+### 5. Run the Pipeline
 
-Execute the scripts from the project root, following the data dependencies:
+From the project root, run the scripts in the following order:
 
 ```bash
 python src/inspect_data.py
@@ -156,7 +156,7 @@ The scripts generate processed data, analytical reports, and machine learning ou
 
 ## Power BI Dashboard
 
-The project also includes a Power BI dashboard developed for retail performance monitoring, with:
+The project includes a Power BI dashboard for retail performance monitoring, featuring:
 
 - Key performance indicator cards
 - Monthly sales trends
@@ -164,15 +164,19 @@ The project also includes a Power BI dashboard developed for retail performance 
 - Country-level sales performance
 - Date filtering
 
-The existing dashboard is maintained separately from the Python modelling pipeline.
-
+The dashboard is maintained separately from the Python modelling pipeline.
 
 ## Author
 
 **Rashmita Perumanla**
 
-GitHub: [rashmita-21](https://github.com/rashmita-21)
+- **GitHub:** [github.com/rashmita-21](https://github.com/rashmita-21)
+- **LinkedIn:** [www.linkedin.com/in/rashmita-perumanla](https://www.linkedin.com/in/rashmita-perumanla/)
 
----
+## Copyright
 
-*CommercePulse AI demonstrates an integrated approach to retail analytics, customer behaviour analysis, and predictive modelling using historical transaction data.*
+© 2026 Rashmita Perumanla. All rights reserved.
+
+The original source code and documentation in this repository are owned by the author. The UCI Online Retail II dataset remains subject to its applicable terms of use. Third-party libraries and tools remain subject to their respective licenses.
+
+No permission is granted to reuse, redistribute, or modify the author's original work without prior permission.
